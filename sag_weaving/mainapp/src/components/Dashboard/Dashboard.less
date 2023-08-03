@@ -1,0 +1,32 @@
+@import '../../../static/css/colors';
+.dashboard {
+  transition: all 0.3s;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  &__shift {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 5px;
+  }
+  &__shift-title {
+    font-size: 1.5rem;
+    color: @white;
+    text-align: center;
+  }
+  &__table {
+    background: @white;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow-x: scroll;
+  }
+  &__machinechart {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 50px;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../static/css/colors';
+.machinechart {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  &__table {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__name {
+    color: @gray-dark;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__line {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 10px;
+    transform-origin: bottom;
+    transition: all 0.3s;
+  }
+  &__smile {
+    height: 50px;
+    position: absolute;
+    left: -20px;
+    transition: all 0.3s;
+  }
+  &__white {
+    fill: #FFFFFF;
+  }
+}

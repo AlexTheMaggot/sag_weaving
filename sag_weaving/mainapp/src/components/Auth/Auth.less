@@ -1,0 +1,65 @@
+@import '../../../static/css/colors';
+.auth {
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  &__form {
+    padding: 25px 50px;
+    background: @white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  &__input {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+
+  &__submit {
+    padding: 5px 10px;
+    display: block;
+    margin: 10px auto 0 auto;
+    font-size: 1.1rem;
+    background: @green;
+    color: @white;
+    border: none;
+    border-radius: 5px;
+  }
+  &__wrong {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    padding: 10px;
+    background: @red-light;
+    transition: all 0.3s;
+    color: @red-dark;
+  }
+}
+@media screen and (max-width: 720px) {
+  .auth {
+    &__form {
+      background: @gray-dark;
+      flex-grow: 1;
+      height: 100vh;
+      justify-content: center;
+    }
+    &__title {
+      color: @white;
+    }
+    &__input {
+      margin: 0 auto 5px auto;
+      max-width: 250px;
+    }
+    &__wrong {
+      right: unset;
+    }
+  }
+}

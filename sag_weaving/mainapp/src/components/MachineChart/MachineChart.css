@@ -1,0 +1,35 @@
+.machinechart {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+.machinechart__table {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.machinechart__name {
+  color: #333333;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.machinechart__line {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 10px;
+  transform-origin: bottom;
+  transition: all 0.3s;
+}
+.machinechart__smile {
+  height: 50px;
+  position: absolute;
+  left: -20px;
+  transition: all 0.3s;
+}
+.machinechart__white {
+  fill: #FFFFFF;
+}
+/*# sourceMappingURL=MachineChart.css.map */
